@@ -33,3 +33,4 @@ puts "Exponenciação **=x : #{var}**=1 = #{var**=1}"
 #Operadores Lógicos
 puts "Operador and, && : true and false = #{true and false}"
 puts "Operador or, || : true or false = #{true or false}"
+puts "Operador not, ! : !true = #{not true}"
