@@ -5,22 +5,6 @@ class Pessoa
   attr_accessor :idade
 end
 
-class Animal
-  #writer dispensa o setter e necessita do getter
-  attr_writer :nome
-
-  #writer dispensa o getter e necessita do setter
-  attr_reader :raca
-
-  def get_nome_cachorro
-    @nome
-  end
-
-  def set_raca(raca_do_cachorro)
-    @raca = raca_do_cachorro
-  end
-end
-
 #Instanciação de objeto
 pessoa1 = Pessoa.new
 
