@@ -10,8 +10,7 @@ class Funcionario
 end
 
 class Gerente < Funcionario
-  attr_accessor :senha
-  attr_accessor :tempo_de_empresa
+  attr_accessor :senha, :tempo_de_empresa
   def initialize(nome,cpf,salario,senha, tempo)
     @nome = nome
     @cpf = cpf
