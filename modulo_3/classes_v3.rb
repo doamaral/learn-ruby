@@ -5,14 +5,31 @@ class Pessoa
   attr_accessor :idade
 end
 
+class Animal
+  #writer dispensa o setter e necessita do getter
+  attr_writer :nome
+
+  #writer dispensa o getter e necessita do setter
+  attr_reader :raca
+
+  def get_nome_cachorro
+    @nome
+  end
+
+  def set_raca(raca_do_cachorro)
+    @raca = raca_do_cachorro
+  end
+end
+
 #Instanciação de objeto
 pessoa1 = Pessoa.new
 
-#Passando o parâmetro no Método
+#Paasando o parâmetro no Método
 pessoa1.nome = "Lucas Amaral"
 pessoa1.idade = 32
 puts pessoa1.nome
 puts pessoa1.idade
+
 puts "****************************************"
 cachorro1 = Animal.new
 cachorro1.nome = "Rex"
