@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cpf_utils (1.2.1)
+    lerolero_generator (1.0.1)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  cpf_utils
+  lerolero_generator
+
+BUNDLED WITH
+   1.16.0
