@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    tty-cursor (0.5.0)
+    tty-spinner (0.7.0)
+      tty-cursor (>= 0.5.0)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  tty-cursor
+  tty-spinner
+
+BUNDLED WITH
+   1.16.0

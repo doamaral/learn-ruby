@@ -1,3 +1,4 @@
+require 'tty-cursor'
 require_relative 'lib/Advinhar'
 acertou = false
 chute = AdivinhaNumero.new('lib/src/opcoes.txt',10)
