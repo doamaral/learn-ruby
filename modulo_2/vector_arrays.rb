@@ -9,11 +9,5 @@ end
 
 i = 0
 
-while i<10
-  puts v[i]
-  i+=1
-end
-
-pop = v.pop()
-
-puts pop
+puts "Inspecionar um vetor"
+puts v.inspect
