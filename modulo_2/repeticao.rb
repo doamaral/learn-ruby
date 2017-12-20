@@ -13,5 +13,8 @@ until until_count <= 1 #Enquando a condição for Falsa
   until_count -=1
 end
 
+"ASDF".split("").each do |a|
+  puts a
+end
 
 puts "Lucas\n"*10
