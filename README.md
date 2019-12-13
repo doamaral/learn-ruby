@@ -103,6 +103,8 @@ end
 
 ### Looping
 
+#### For loop
+
 ```ruby
 # using for loop  
 for i in arr do
@@ -118,9 +120,56 @@ while conditional
 end
 ```
 
+#### Until loop
+
 ```ruby
 # until loop: while conditional is false
 until conditional
  # code to be executed
+end
+```
+
+```ruby
+#each loop: for each |element| in arr (array) with an iteration variable
+arr.each do |element|
+  puts element
+end
+```
+
+#### Each loop
+
+```ruby
+#each loop: for each |element| in range with an iteration variable
+(1..5).each do |element|
+  puts element
+end
+#if the range was 1...5, last element would not be considered
+```
+
+or
+
+```ruby
+# each loop: repeats statements the size of the range
+(1..5).each do
+  #statements
+end
+```
+
+#### Times loop
+
+```ruby
+# times-loop.
+5.times do
+    puts "a"
+end
+```
+
+or
+
+```ruby
+# times-loop with an iteration variable
+# starts in 0
+5.times do |i|
+    puts i
 end
 ```
