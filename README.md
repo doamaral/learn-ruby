@@ -58,6 +58,79 @@ var_boolean = true
 - Type checking
   - .class
   - .instace_of?(Type)
+- Scope
+  - Local
+  - Instance (@variable)
+  - Constant (Variable or VARIABLE)
+  - Global ($variable)
+
+### Operators
+
+[More in](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Operators#Operators)
+
+#### Assignment
+
+```ruby
+# assignment =
+var = 5
+```
+
+#### Arithmetic
+
+```ruby
+# addition or concatenation +
+1 + 2
+"asd" + "fgh"
+
+# subtraction -
+1 - 2
+
+# multiplication *
+1 * 2
+
+# division /
+1 / 2
+
+# exponentiation **
+2 ** 3
+
+# modulo (remainder) %
+3 % 2
+```
+
+#### Logic
+
+```ruby
+# equals ==
+a == b
+
+# not equals !=
+a != b
+
+# not
+!a
+
+# greater than >
+a > b
+
+# greater than or equal to
+a >= b
+
+# less than >
+a < b
+
+# less than or equal to
+a <= b
+
+# boolean And &&
+a && b
+
+# boolean OR ||
+a || b
+
+
+
+```
 
 ### String
 - Common Methods
@@ -73,6 +146,8 @@ var_boolean = true
 arr = [1,2,3,4]
 arr = ["1","2","3","4"]
 arr = ["1",2,["3"],true]
+arr[0] = 10
+arr[1] = "some random string"
 ```
 
 ### Conditionals
@@ -86,12 +161,14 @@ else
 or
 
 ```ruby
+# using 'then'
 if v1 > 10 then
   puts "Greater than 10"
 else
 ```
 
 ```ruby
+# elseif statement
 if v1 > 10
   puts "Greater than 10"
 elsif v1 > 6
@@ -99,6 +176,27 @@ elsif v1 > 6
 else
   puts "Less than or equal to 6"
 end
+```
+
+```ruby
+# using 'unless' conditional
+unless conditional
+  # if conditional is false
+end
+```
+
+```ruby
+# using 'unless' with 'else' statement conditional
+unless conditional
+  # if conditional is false
+else
+  # if conditional is true 
+end
+```
+
+```ruby
+# ternary operator
+conditional ? <success statements> : <failure statements>
 ```
 
 ### Looping
@@ -171,5 +269,28 @@ or
 # starts in 0
 5.times do |i|
     puts i
+end
+```
+
+### Methods & Functions
+
+```ruby 
+# using parenthesis
+def method_name(parameter_1, parameter_2, ...)
+  return x
+end
+```
+
+```ruby 
+# no parenthesis
+def method_name parameter_1, parameter_2, ...
+  return x
+end
+```
+
+```ruby 
+# no 'return' statement
+def method_name parameter_1, parameter_2, ...
+  x
 end
 ```
